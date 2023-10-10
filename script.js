@@ -88,7 +88,7 @@ submitAction.addEventListener("submit", function () {
     id: +new Date(),
     title: inputTitle,
     author: inputAuthor,
-    year: inputYear,
+    year: +inputYear,
     isComplete: inputIsComplete,
   };
 
@@ -251,7 +251,7 @@ document.addEventListener("submit", function (event) {
       id: previousBookData.id,
       title: editTitle,
       author: editAuthor,
-      year: editYear,
+      year: +editYear,
       isComplete: previousBookData.isComplete,
     };
 
